@@ -1,0 +1,315 @@
+text,intent,response
+berapa nim achmad yusuf,cek_nim,261012000027
+nim achmad yusuf berapa,cek_nim,261012000027
+achmad yusuf nimnya berapa,cek_nim,261012000027
+bisa minta nim achmad yusuf,cek_nim,261012000027
+nim dari achmad yusuf,cek_nim,261012000027
+saya di kelas berapa,cek_kelas,01MKMM001
+kelas saya apa,cek_kelas,01MKMM001
+aku kelas berapa ya,cek_kelas,01MKMM001
+info kelas saya,cek_kelas,01MKMM001
+kelas kuliahku apa,cek_kelas,01MKMM001
+siapa dosen data mining,cek_dosen,DR. Ir AGUNG BUDI SUSANTO MM
+dosen data mining siapa,cek_dosen,DR. Ir AGUNG BUDI SUSANTO MM
+pengajar mata kuliah data mining,cek_dosen,DR. Ir AGUNG BUDI SUSANTO MM
+data mining diajar oleh siapa,cek_dosen,DR. Ir AGUNG BUDI SUSANTO MM
+dosen algoritma design and analysis,cek_dosen,Dr. CHOIRUL BASIR S.Si. M.Si.
+siapa yang ngajar algoritma design,cek_dosen,Dr. CHOIRUL BASIR S.Si. M.Si.
+pengajar algoritma design and analysis,cek_dosen,Dr. CHOIRUL BASIR S.Si. M.Si.
+dosen modelling and optimization,cek_dosen,Dr ABU KHALID RIVAI S.Si. M.Eng
+siapa dosen modelling,cek_dosen,Dr ABU KHALID RIVAI S.Si. M.Eng
+pengajar modelling and optimization,cek_dosen,Dr ABU KHALID RIVAI S.Si. M.Eng
+dosen research methodology,cek_dosen,Dr MURNI HANDAYANI S.Si. M.Sc
+siapa dosen research methodology,cek_dosen,Dr MURNI HANDAYANI S.Si. M.Sc
+pengajar research methodology,cek_dosen,Dr MURNI HANDAYANI S.Si. M.Sc
+apa itu my unpam,cek_sistem,My Unpam adalah sistem informasi akademik mahasiswa universitas pamulang
+apa itu mentari,cek_sistem,Mentari adalah manajemen terpadu pembelajaran daring
+apa itu sispena,cek_sistem,Sispena adalah sistem pemeringkatan mahasiswa untuk prestasi akademik
+apa itu siskerma,cek_sistem,Siskerma adalah sistem kerjasama
+apa itu my lsp,cek_sistem,My LSP adalah sistem sertifikasi unpam
+apa itu my lb,cek_sistem,My LB adalah sistem lembaga bahasa unpam
+apa itu tracer study,cek_sistem,Tracer study adalah sistem tracer study universitas pamulang
+apa itu ems,cek_sistem,EMS adalah event management system
+berapa nim achmad hisyam syarif,cek_nim,261012000112
+nim achmad hisyam syarif berapa,cek_nim,261012000112
+achmad hisyam syarif nimnya berapa,cek_nim,261012000112
+bisa minta nim achmad hisyam syarif,cek_nim,261012000112
+nim dari achmad hisyam syarif,cek_nim,261012000112
+berapa nim agil fistra yudhasena,cek_nim,261012000044
+nim agil fistra yudhasena berapa,cek_nim,261012000044
+agil fistra yudhasena nimnya berapa,cek_nim,261012000044
+bisa minta nim agil fistra yudhasena,cek_nim,261012000044
+nim dari agil fistra yudhasena,cek_nim,261012000044
+berapa nim ahmad juhari,cek_nim,261012000007
+nim ahmad juhari berapa,cek_nim,261012000007
+ahmad juhari nimnya berapa,cek_nim,261012000007
+bisa minta nim ahmad juhari,cek_nim,261012000007
+nim dari ahmad juhari,cek_nim,261012000007
+berapa nim andy hardjono,cek_nim,261012000019
+nim andy hardjono berapa,cek_nim,261012000019
+andy hardjono nimnya berapa,cek_nim,261012000019
+bisa minta nim andy hardjono,cek_nim,261012000019
+nim dari andy hardjono,cek_nim,261012000019
+berapa nim angga rosdiansyah,cek_nim,261012000028
+nim angga rosdiansyah berapa,cek_nim,261012000028
+angga rosdiansyah nimnya berapa,cek_nim,261012000028
+bisa minta nim angga rosdiansyah,cek_nim,261012000028
+nim dari angga rosdiansyah,cek_nim,261012000028
+berapa nim anis sya`ban dwijaya,cek_nim,261012000062
+nim anis sya`ban dwijaya berapa,cek_nim,261012000062
+anis sya`ban dwijaya nimnya berapa,cek_nim,261012000062
+bisa minta nim anis sya`ban dwijaya,cek_nim,261012000062
+nim dari anis sya`ban dwijaya,cek_nim,261012000062
+berapa nim aryya pramodana,cek_nim,261012000023
+nim aryya pramodana berapa,cek_nim,261012000023
+aryya pramodana nimnya berapa,cek_nim,261012000023
+bisa minta nim aryya pramodana,cek_nim,261012000023
+nim dari aryya pramodana,cek_nim,261012000023
+berapa nim dede permana,cek_nim,261012000096
+nim dede permana berapa,cek_nim,261012000096
+dede permana nimnya berapa,cek_nim,261012000096
+bisa minta nim dede permana,cek_nim,261012000096
+nim dari dede permana,cek_nim,261012000096
+berapa nim firsta zhahara wijI ramadhani,cek_nim,261012000010
+nim firsta zhahara wijI ramadhani berapa,cek_nim,261012000010
+firsta zhahara wijI ramadhani nimnya berapa,cek_nim,261012000010
+bisa minta nim firsta zhahara wijI ramadhani,cek_nim,261012000010
+nim dari firsta zhahara wijI ramadhani,cek_nim,261012000010
+berapa nim gigih bagus pambekti,cek_nim,261012000087
+nim gigih bagus pambekti berapa,cek_nim,261012000087
+gigih bagus pambekti nimnya berapa,cek_nim,261012000087
+bisa minta nim gigih bagus pambekti,cek_nim,261012000087
+nim dari gigih bagus pambekti,cek_nim,261012000087
+berapa nim handri samanta,cek_nim,261012000082
+nim handri samanta berapa,cek_nim,261012000082
+handri samanta nimnya berapa,cek_nim,261012000082
+bisa minta nim handri samanta,cek_nim,261012000082
+nim dari handri samanta,cek_nim,261012000082
+berapa nim hendra danopan,cek_nim,261012000030
+nim hendra danopan berapa,cek_nim,261012000030
+hendra danopan nimnya berapa,cek_nim,261012000030
+bisa minta nim hendra danopan,cek_nim,261012000030
+nim dari hendra danopan,cek_nim,261012000030
+berapa nim hermansyah,cek_nim,261012000059
+nim hermansyah berapa,cek_nim,261012000059
+hermansyah nimnya berapa,cek_nim,261012000059
+bisa minta nim hermansyah,cek_nim,261012000059
+nim dari hermansyah,cek_nim,261012000059
+berapa nim i gede ressa agustika sativa,cek_nim,261012000016
+nim i gede ressa agustika sativa berapa,cek_nim,261012000016
+i gede ressa agustika sativa nimnya berapa,cek_nim,261012000016
+bisa minta nim i gede ressa agustika sativa,cek_nim,261012000016
+nim dari i gede ressa agustika sativa,cek_nim,261012000016
+berapa nim ikhwan tiarahman tjaja,cek_nim,261012000102
+nim ikhwan tiarahman tjaja berapa,cek_nim,261012000102
+ikhwan tiarahman tjaja nimnya berapa,cek_nim,261012000102
+bisa minta nim ikhwan tiarahman tjaja,cek_nim,261012000102
+nim dari ikhwan tiarahman tjaja,cek_nim,261012000102
+berapa nim indra fadhilah,cek_nim,261012000099
+nim indra fadhilah berapa,cek_nim,261012000099
+indra fadhilah nimnya berapa,cek_nim,261012000099
+bisa minta nim indra fadhilah,cek_nim,261012000099
+nim dari indra fadhilah,cek_nim,261012000099
+berapa nim moh. erland sumantri,cek_nim,241012050071
+nim moh. erland sumantri berapa,cek_nim,241012050071
+moh. erland sumantri nimnya berapa,cek_nim,241012050071
+bisa minta nim moh. erland sumantri,cek_nim,241012050071
+nim dari moh. erland sumantri,cek_nim,241012050071
+berapa nim muh. masri sari,cek_nim,261012000011
+nim muh. masri sari berapa,cek_nim,261012000011
+muh. masri sari nimnya berapa,cek_nim,261012000011
+bisa minta nim muh. masri sari,cek_nim,261012000011
+nim dari muh. masri sari,cek_nim,261012000011
+berapa nim muhamad yamin,cek_nim,261012000029
+nim muhamad yamin berapa,cek_nim,261012000029
+muhamad yamin nimnya berapa,cek_nim,261012000029
+bisa minta nim muhamad yamin,cek_nim,261012000029
+nim dari muhamad yamin,cek_nim,261012000029
+berapa nim muhammad agus adityawan,cek_nim,261012000025
+nim muhammad agus adityawan berapa,cek_nim,261012000025
+muhammad agus adityawan nimnya berapa,cek_nim,261012000025
+bisa minta nim muhammad agus adityawan,cek_nim,261012000025
+nim dari muhammad agus adityawan,cek_nim,261012000025
+berapa nim muhammad fadhli abdulloh,cek_nim,261012000033
+nim muhammad fadhli abdulloh berapa,cek_nim,261012000033
+muhammad fadhli abdulloh nimnya berapa,cek_nim,261012000033
+bisa minta nim muhammad fadhli abdulloh,cek_nim,261012000033
+nim dari muhammad fadhli abdulloh,cek_nim,261012000033
+berapa nim nadila oktaviani,cek_nim,261012000014
+nim nadila oktaviani berapa,cek_nim,261012000014
+nadila oktaviani nimnya berapa,cek_nim,261012000014
+bisa minta nim nadila oktaviani,cek_nim,261012000014
+nim dari nadila oktaviani,cek_nim,261012000014
+berapa nim naila chairiana,cek_nim,261012000067
+nim naila chairiana berapa,cek_nim,261012000067
+naila chairiana nimnya berapa,cek_nim,261012000067
+bisa minta nim naila chairiana,cek_nim,261012000067
+nim dari naila chairiana,cek_nim,261012000067
+berapa nim nur ayu hasanah,cek_nim,261012000008
+nim nur ayu hasanah berapa,cek_nim,261012000008
+nur ayu hasanah nimnya berapa,cek_nim,261012000008
+bisa minta nim nur ayu hasanah,cek_nim,261012000008
+nim dari nur ayu hasanah,cek_nim,261012000008
+berapa nim nur siti aisyah,cek_nim,261012000053
+nim nur siti aisyah berapa,cek_nim,261012000053
+nur siti aisyah nimnya berapa,cek_nim,261012000053
+bisa minta nim nur siti aisyah,cek_nim,261012000053
+nim dari nur siti aisyah,cek_nim,261012000053
+berapa nim panggih daryanto,cek_nim,261012000022
+nim panggih daryanto berapa,cek_nim,261012000022
+panggih daryanto nimnya berapa,cek_nim,261012000022
+bisa minta nim panggih daryanto,cek_nim,261012000022
+nim dari panggih daryanto,cek_nim,261012000022
+berapa nim pijar haqqullah akbar,cek_nim,261012000001
+nim pijar haqqullah akbar berapa,cek_nim,261012000001
+pijar haqqullah akbar nimnya berapa,cek_nim,261012000001
+bisa minta nim pijar haqqullah akbar,cek_nim,261012000001
+nim dari pijar haqqullah akbar,cek_nim,261012000001
+berapa nim raden raditya satrio wijanarko,cek_nim,261012000118
+nim raden raditya satrio wijanarko berapa,cek_nim,261012000118
+raden raditya satrio wijanarko nimnya berapa,cek_nim,261012000118
+bisa minta nim raden raditya satrio wijanarko,cek_nim,261012000118
+nim dari raden raditya satrio wijanarko,cek_nim,261012000118
+berapa nim rahmat hidayat,cek_nim,261012000036
+nim rahmat hidayat berapa,cek_nim,261012000036
+rahmat hidayat nimnya berapa,cek_nim,261012000036
+bisa minta nim rahmat hidayat,cek_nim,261012000036
+nim dari rahmat hidayat,cek_nim,261012000036
+berapa nim raihan restu putra,cek_nim,261012000017
+nim raihan restu putra berapa,cek_nim,261012000017
+raihan restu putra nimnya berapa,cek_nim,261012000017
+bisa minta nim raihan restu putra,cek_nim,261012000017
+nim dari raihan restu putra,cek_nim,261012000017
+berapa nim ramdhani febriansyah,cek_nim,261012000063
+nim ramdhani febriansyah berapa,cek_nim,261012000063
+ramdhani febriansyah nimnya berapa,cek_nim,261012000063
+bisa minta nim ramdhani febriansyah,cek_nim,261012000063
+nim dari ramdhani febriansyah,cek_nim,261012000063
+berapa nim reina annisa,cek_nim,261012000074
+nim reina annisa berapa,cek_nim,261012000074
+reina annisa nimnya berapa,cek_nim,261012000074
+bisa minta nim reina annisa,cek_nim,261012000074
+nim dari reina annisa,cek_nim,261012000074
+berapa nim ridwan imam syarif,cek_nim,261012000114
+nim ridwan imam syarif berapa,cek_nim,261012000114
+ridwan imam syarif nimnya berapa,cek_nim,261012000114
+bisa minta nim ridwan imam syarif,cek_nim,261012000114
+nim dari ridwan imam syarif,cek_nim,261012000114
+berapa nim suparno,cek_nim,261012000012
+nim suparno berapa,cek_nim,261012000012
+suparno nimnya berapa,cek_nim,261012000012
+bisa minta nim suparno,cek_nim,261012000012
+nim dari suparno,cek_nim,261012000012
+berapa nim virgiawan rozan darmansyah,cek_nim,261012000003
+nim virgiawan rozan darmansyah berapa,cek_nim,261012000003
+virgiawan rozan darmansyah nimnya berapa,cek_nim,261012000003
+bisa minta nim virgiawan rozan darmansyah,cek_nim,261012000003
+nim dari virgiawan rozan darmansyah,cek_nim,261012000003
+berapa nim wahid abdul manan,cek_nim,261012000006
+nim wahid abdul manan berapa,cek_nim,261012000006
+wahid abdul manan nimnya berapa,cek_nim,261012000006
+bisa minta nim wahid abdul manan,cek_nim,261012000006
+nim dari wahid abdul manan,cek_nim,261012000006
+berapa nim yoan sutiawan,cek_nim,261012000018
+nim yoan sutiawan berapa,cek_nim,261012000018
+yoan sutiawan nimnya berapa,cek_nim,261012000018
+bisa minta nim yoan sutiawan,cek_nim,261012000018
+nim dari yoan sutiawan,cek_nim,261012000018
+total angsuran kuliah,cek_tagihan,Total tagihan semester: Rp 5550000
+angsuran kuliah,cek_tagihan,Registrasi Awal: Rp 1650000 - Angsuran 2-6: Rp 600000 - UTS: Rp 450000 - UAS: Rp 450000
+berapa kredit data mining,cek_sks,3 SKS
+data mining berapa kredit,cek_sks,3 SKS
+jumlah SKS data mining berapa,cek_sks,3 SKS
+mata kuliah data mining berapa SKS,cek_sks,3 SKS
+beban studi data mining berapa SKS,cek_sks,3 SKS
+algoritma design and analysis jumlah SKS berapa,cek_sks,3 SKS
+berapa kredit algoritma design and analysis,cek_sks,3 SKS
+modelling and optimization berapa kredit,cek_sks,3 SKS
+jumlah SKS modelling and optimization,cek_sks,3 SKS
+research methodology berapa kredit,cek_sks,3 SKS
+jumlah SKS research methodology berapa,cek_sks,3 SKS
+total kredit semester ini berapa,cek_sks,12 SKS
+jumlah beban SKS semester ini,cek_sks,12 SKS
+berapa total SKS yang saya ambil,cek_sks,12 SKS
+semester ini saya mengambil berapa SKS,cek_sks,12 SKS
+tugas kuliah saya apa saja,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+apa saja tugas yang diberikan,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+ada tugas kuliah apa,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+tugas yang harus dikerjakan apa saja,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+saya punya tugas apa saja,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+bisa lihat tugas kuliah,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+tugas saya minggu ini apa,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+minggu ini ada tugas apa,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+apa tugas yang harus saya kerjakan minggu ini,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+tolong cek tugas kuliah saya,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+boleh tidak masuk kuliah berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+maksimal tidak hadir kuliah berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+kalau tidak masuk kuliah maksimal berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+batas tidak hadir kuliah berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+berapa batas maksimal absen kuliah,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+saya boleh absen berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+aturan maksimal tidak hadir kuliah,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+berapa kali mahasiswa boleh absen,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+presensi elearning syaratnya apa,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+bagaimana syarat presensi elearning,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+presensi elearning dianggap hadir sampai tahap apa,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+kapan mahasiswa dianggap mengikuti kuliah daring,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+aturan presensi elearning bagaimana,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+UTS dilaksanakan kapan,cek_jadwal_uts,UTS: 21 Oktober 2026 (Rabu) dan 23 Oktober 2026 (Jumat)
+kapan jadwal ujian tengah semester,cek_jadwal_uts,UTS: 21 Oktober 2026 (Rabu) dan 23 Oktober 2026 (Jumat)
+ujian tengah semester tanggal berapa,cek_jadwal_uts,UTS: 21 Oktober 2026 (Rabu) dan 23 Oktober 2026 (Jumat)
+UTS semester ini tanggal berapa,cek_jadwal_uts,UTS: 21 Oktober 2026 (Rabu) dan 23 Oktober 2026 (Jumat)
+jadwal ujian tengah semester kapan,cek_jadwal_uts,UTS: 21 Oktober 2026 (Rabu) dan 23 Oktober 2026 (Jumat)
+tanggal pelaksanaan UTS kapan,cek_jadwal_uts,UTS: 21 Oktober 2026 (Rabu) dan 23 Oktober 2026 (Jumat)
+kapan saya ujian tengah semester,cek_jadwal_uts,UTS: 21 Oktober 2026 (Rabu) dan 23 Oktober 2026 (Jumat)
+cek jadwal UTS,cek_jadwal_uts,UTS: 21 Oktober 2026 (Rabu) dan 23 Oktober 2026 (Jumat)
+UAS dilaksanakan kapan,cek_jadwal_uas,UAS: 16 Desember 2026 (Rabu) dan 18 Desember 2026 (Jumat)
+kapan jadwal ujian akhir semester,cek_jadwal_uas,UAS: 16 Desember 2026 (Rabu) dan 18 Desember 2026 (Jumat)
+ujian akhir semester tanggal berapa,cek_jadwal_uas,UAS: 16 Desember 2026 (Rabu) dan 18 Desember 2026 (Jumat)
+UAS semester ini tanggal berapa,cek_jadwal_uas,UAS: 16 Desember 2026 (Rabu) dan 18 Desember 2026 (Jumat)
+jadwal ujian akhir semester kapan,cek_jadwal_uas,UAS: 16 Desember 2026 (Rabu) dan 18 Desember 2026 (Jumat)
+tanggal pelaksanaan UAS kapan,cek_jadwal_uas,UAS: 16 Desember 2026 (Rabu) dan 18 Desember 2026 (Jumat)
+kapan saya ujian akhir semester,cek_jadwal_uas,UAS: 16 Desember 2026 (Rabu) dan 18 Desember 2026 (Jumat)
+cek jadwal UAS,cek_jadwal_uas,UAS: 16 Desember 2026 (Rabu) dan 18 Desember 2026 (Jumat)
+berapa total biaya kuliah saya,cek_tagihan,Total tagihan semester: Rp 5.550.000
+total tagihan semester saya berapa,cek_tagihan,Total tagihan semester: Rp 5.550.000
+berapa yang harus saya bayar semester ini,cek_tagihan,Total tagihan semester: Rp 5.550.000
+jumlah tagihan kuliah saya berapa,cek_tagihan,Total tagihan semester: Rp 5.550.000
+total pembayaran semester ini berapa,cek_tagihan,Total tagihan semester: Rp 5.550.000
+cek tagihan kuliah saya,cek_tagihan,Total tagihan semester: Rp 5.550.000
+cek biaya semester saya,cek_tagihan,Total tagihan semester: Rp 5.550.000
+berapa biaya kuliah semester ini,cek_tagihan,Total tagihan semester: Rp 5.550.000
+saya punya tagihan berapa,cek_tagihan,Total tagihan semester: Rp 5.550.000
+berapa uang kuliah yang harus dibayar,cek_tagihan,Total tagihan semester: Rp 5.550.000
+boleh tidak masuk kuliah berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+maksimal tidak hadir kuliah berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+kalau tidak masuk kuliah maksimal berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+batas tidak hadir kuliah berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+berapa batas maksimal absen kuliah,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+saya boleh absen berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+aturan maksimal tidak hadir kuliah,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+berapa kali mahasiswa boleh absen,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
+presensi elearning syaratnya apa,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+bagaimana syarat presensi elearning,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+presensi elearning dianggap hadir sampai tahap apa,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+kapan mahasiswa dianggap mengikuti kuliah daring,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+aturan presensi elearning bagaimana,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+kuliah data mining hari apa,cek_jadwal,Rabu
+data mining dilaksanakan hari apa,cek_jadwal,Rabu
+data mining jadwalnya kapan,cek_jadwal,Rabu
+kapan saya kuliah data mining,cek_jadwal,Rabu
+data mining masuk hari apa,cek_jadwal,Rabu
+hari kuliah data mining kapan,cek_jadwal,Rabu
+jadwal mata kuliah data mining,cek_jadwal,Rabu
+data mining kuliah setiap hari apa,cek_jadwal,Rabu
+cek jadwal data mining,cek_jadwal,Rabu
+saya mau tahu jadwal data mining,cek_jadwal,Rabu
+algoritma design and analysis kuliah hari apa,cek_jadwal,Jumat
+kapan kuliah algoritma design and analysis,cek_jadwal,Jumat
+algoritma design and analysis jadwalnya kapan,cek_jadwal,Jumat
+modelling and optimization kuliah hari apa,cek_jadwal,Jumat
+kapan kuliah modelling and optimization,cek_jadwal,Jumat
+modelling jadwalnya kapan,cek_jadwal,Jumat
+research methodology kuliah hari apa,cek_jadwal,Rabu
+kapan kuliah research methodology,cek_jadwal,Rabu
+research methodology jadwalnya kapan,cek_jadwal,Rabu

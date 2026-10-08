@@ -1,0 +1,531 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   APP
+===================================================== */
+
+body {
+    background: #d7dbd6;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #efeae2;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.chat-header {
+    height: 64px;
+    min-height: 64px;
+
+    background: #075e54;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 8px 16px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+    z-index: 10;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    margin-right: 12px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.status {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 3px;
+}
+
+
+/* =====================================================
+   CHAT AREA
+===================================================== */
+
+.chatbox {
+
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 20px 8px 12px 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #efeae2;
+
+    /*
+       Pattern sederhana ala WhatsApp
+    */
+    background-image:
+        radial-gradient(
+            rgba(0, 0, 0, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 20px 20px;
+
+    scroll-behavior: smooth;
+}
+
+
+/* =====================================================
+   MESSAGE ROW
+===================================================== */
+
+.message-row {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.bot-row {
+    justify-content: flex-start;
+}
+
+.user-row {
+    justify-content: flex-end;
+}
+
+
+/* =====================================================
+   MESSAGE BUBBLE
+===================================================== */
+
+.message {
+
+    max-width: 70%;
+
+    padding: 8px 10px 6px 10px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+
+    position: relative;
+
+    word-wrap: break-word;
+
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+
+/* BOT */
+
+.bot-message {
+    background: white;
+
+    border-top-left-radius: 2px;
+}
+
+
+/* USER */
+
+.user-message {
+    background: #d9fdd3;
+
+    border-top-right-radius: 2px;
+}
+
+
+/* =====================================================
+   MESSAGE TEXT
+===================================================== */
+
+.message-text {
+    padding-right: 50px;
+}
+
+
+/* =====================================================
+   TIME
+===================================================== */
+
+.message-time {
+
+    font-size: 10px;
+
+    color: #667781;
+
+    text-align: right;
+
+    margin-top: -2px;
+}
+
+
+/* =====================================================
+   MODEL INFO
+===================================================== */
+
+.model-info {
+
+    font-size: 10px;
+
+    color: #667781;
+
+    margin-left: 8px;
+
+    margin-top: -4px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   INPUT AREA
+===================================================== */
+
+.input-container {
+
+    min-height: 70px;
+
+    padding: 10px 8%;
+
+    background: #f0f2f5;
+
+    display: flex;
+
+    align-items: center;
+
+    border-top: 1px solid #ddd;
+}
+
+
+/* =====================================================
+   INPUT WRAPPER
+===================================================== */
+
+.input-wrapper {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+#message {
+
+    flex: 1;
+
+    height: 48px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 24px;
+
+    padding: 0 18px;
+
+    font-size: 15px;
+
+    background: white;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#message::placeholder {
+    color: #8696a0;
+}
+
+
+/* =====================================================
+   SEND BUTTON
+===================================================== */
+
+#sendButton {
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #128c7e;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    transition: 0.2s;
+}
+
+#sendButton:hover {
+    background: #075e54;
+}
+
+#sendButton:active {
+    transform: scale(0.95);
+}
+
+#sendButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.chatbox::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   DESKTOP
+===================================================== */
+
+@media (min-width: 900px) {
+
+    .app {
+
+        max-width: 1100px;
+
+        margin: auto;
+
+        height: 100vh;
+
+        box-shadow:
+            0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .chatbox {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .input-container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .chat-header {
+        position: relative;
+        top: auto;
+
+        height: 60px;
+        min-height: 60px;
+
+        padding: 6px 12px;
+
+        padding-top: max(
+            6px,
+            env(safe-area-inset-top)
+        );
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .status {
+        font-size: 11px;
+    }
+
+    .chatbox {
+        padding: 20px 8px 12px 8px;
+    }
+
+    .message {
+        max-width: 85%;
+        font-size: 14px;
+        padding: 8px 9px 6px 9px;
+    }
+
+    .input-container {
+        min-height: 62px;
+        padding: 7px 8px;
+    }
+
+    #message {
+        height: 46px;
+        font-size: 15px;
+        padding-left: 16px;
+    }
+
+    #sendButton {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+/* =====================================================
+   VERY SMALL PHONE
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .message {
+
+        max-width: 90%;
+
+        font-size: 13px;
+
+    }
+
+    #message {
+
+        font-size: 14px;
+
+    }
+
+}
+
+/* =====================================================
+   AI THINKING
+===================================================== */
+
+.thinking-message {
+    min-width: 125px;
+}
+
+.thinking-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #667781;
+
+    font-size: 13px;
+}
+
+.thinking-dots {
+    display: inline-flex;
+    gap: 2px;
+
+    margin-left: 3px;
+}
+
+.thinking-dots span {
+    font-size: 17px;
+
+    animation: thinkingDot 1.4s infinite;
+}
+
+.thinking-dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.thinking-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.thinking-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes thinkingDot {
+
+    0%,
+    60%,
+    100% {
+        opacity: 0.25;
+
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+
+        transform: translateY(-3px);
+    }
+}
