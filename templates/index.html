@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -17,59 +18,105 @@
 
 <div class="app">
 
-    <!-- HEADER -->
     <header class="chat-header">
-
         <div class="profile">
-
-            <div class="avatar">
-                TK
-            </div>
+            <div class="avatar">TK</div>
 
             <div class="profile-info">
-
-                <div class="name">
-                    Tanyakelas
-                </div>
-
-                <div class="status">
-                    24 Hours Online
-                </div>
-
+                <div class="name">Tanyakelas</div>
+                <div class="status">24 Hours Online</div>
             </div>
-
         </div>
-
     </header>
 
-
-    <!-- CHAT AREA -->
     <main id="chatbox" class="chatbox">
 
         <div class="message-row bot-row">
-
             <div class="message bot-message">
-
                 <div class="message-text">
-                    Halo bro, Saya bot Tanyakelas.
+                    Halo bro, saya bot Tanyakelas.
                     <br>
-                    Pliss tanya seputar perkuliahan saja.
+                    Silakan pilih pertanyaan di bawah atau ketik pertanyaan sendiri.
                 </div>
 
-                <div class="message-time">
-                    Sekarang
-                </div>
+                <div class="message-time">Sekarang</div>
+            </div>
+        </div>
 
+        <!-- REKOMENDASI AWAL -->
+        <section class="suggestion-panel">
+            <div class="suggestion-title">
+            Yang sering ditanyakan
             </div>
 
-        </div>
+            <div id="suggestions" class="suggestions">
+
+                <button type="button"
+                        class="suggestion"
+                        data-message="Info Tugas kuliah?">
+                    Tugas kuliah
+                </button>
+
+                <button type="button"
+                        class="suggestion"
+                        data-message="Jadwal kuliah?">
+                    Jadwal kuliah
+                </button>
+
+                <button type="button"
+                        class="suggestion"
+                        data-message="Kapan jadwal UTS?">
+                    Jadwal UTS
+                </button>
+
+                <button type="button"
+                        class="suggestion"
+                        data-message="Kapan jadwal UAS?">
+                    Jadwal UAS
+                </button>
+
+                <button type="button"
+                        class="suggestion"
+                        data-message="Apa saja tugas kuliah saya?">
+                    Informasi tugas
+                </button>
+
+                <button type="button"
+                        class="suggestion"
+                        data-message="Bagaimana aturan presensi kuliah?">
+                    Aturan presensi
+                </button>
+
+                <button type="button"
+                        class="suggestion"
+                        data-message="Saya berada di kelas berapa?">
+                    Informasi kelas
+                </button>
+
+                <button type="button"
+                        class="suggestion"
+                        data-message="Berapa jumlah SKS saya?">
+                    Informasi SKS
+                </button>
+
+                <button type="button"
+                        class="suggestion"
+                        data-message="Bagaimana cara mengetahui NIM mahasiswa?">
+                    Cek NIM mahasiswa
+                </button>
+
+                <button type="button"
+                        class="suggestion"
+                        data-message="Siapa dosen Data Mining?">
+                    Dosen mata kuliah
+                </button>
+
+            </div>
+        </section>
 
     </main>
 
-
-    <!-- INPUT -->
     <footer class="input-container">
-
         <div class="input-wrapper">
 
             <input
@@ -85,18 +132,14 @@
                 aria-label="Kirim pesan">
 
                 <span>➤</span>
-
             </button>
 
         </div>
-
     </footer>
 
 </div>
 
-
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
-
 </html>

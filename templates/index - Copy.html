@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Tanyakelas</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="chat-header">
+
+        <div class="profile">
+
+            <div class="avatar">
+                TK
+            </div>
+
+            <div class="profile-info">
+
+                <div class="name">
+                    Tanyakelas
+                </div>
+
+                <div class="status">
+                    24 Hours Online
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CHAT AREA -->
+    <main id="chatbox" class="chatbox">
+
+        <div class="message-row bot-row">
+
+            <div class="message bot-message">
+
+                <div class="message-text">
+                    Halo bro, Saya bot Tanyakelas.
+                    <br>
+                    Pliss tanya seputar perkuliahan saja.
+                </div>
+
+                <div class="message-time">
+                    Sekarang
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- INPUT -->
+    <footer class="input-container">
+
+        <div class="input-wrapper">
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Ketik pesan..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                id="sendButton"
+                aria-label="Kirim pesan">
+
+                <span>➤</span>
+
+            </button>
+
+        </div>
+
+    </footer>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

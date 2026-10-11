@@ -529,3 +529,73 @@ body {
         transform: translateY(-3px);
     }
 }
+
+
+/* =====================================================
+   PERTANYAAN REKOMENDASI
+===================================================== */
+
+.suggestion-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 4px 0 16px;
+    width: 100%;
+}
+
+.suggestion-title {
+    color: #54656f;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+}
+
+.suggestion {
+    max-width: 100%;
+    border: 1px solid #128c7e;
+    border-radius: 18px;
+    background: #ffffff;
+    color: #075e54;
+    padding: 9px 13px;
+    font-size: 12px;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.suggestion:hover {
+    background: #128c7e;
+    color: #ffffff;
+}
+
+.suggestion:active {
+    transform: scale(0.98);
+}
+
+.suggestion:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .suggestion-panel {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .suggestions {
+        gap: 7px;
+    }
+
+    .suggestion {
+        padding: 8px 11px;
+        font-size: 12px;
+    }
+}

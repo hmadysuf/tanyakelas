@@ -215,7 +215,7 @@ nim yoan sutiawan berapa,cek_nim,261012000018
 yoan sutiawan nimnya berapa,cek_nim,261012000018
 bisa minta nim yoan sutiawan,cek_nim,261012000018
 nim dari yoan sutiawan,cek_nim,261012000018
-total angsuran kuliah,cek_tagihan,Total tagihan semester: Rp 5550000
+total angsuran semester,cek_tagihan,Total tagihan semester: Rp 5.550.000
 angsuran kuliah,cek_tagihan,Registrasi Awal: Rp 1650000 - Angsuran 2-6: Rp 600000 - UTS: Rp 450000 - UAS: Rp 450000
 berapa kredit data mining,cek_sks,3 SKS
 data mining berapa kredit,cek_sks,3 SKS
@@ -228,20 +228,21 @@ modelling and optimization berapa kredit,cek_sks,3 SKS
 jumlah SKS modelling and optimization,cek_sks,3 SKS
 research methodology berapa kredit,cek_sks,3 SKS
 jumlah SKS research methodology berapa,cek_sks,3 SKS
+berapa jumlah SKS,cek_sks,3 SKS per matkul total 12 SKS bro
 total kredit semester ini berapa,cek_sks,12 SKS
 jumlah beban SKS semester ini,cek_sks,12 SKS
 berapa total SKS yang saya ambil,cek_sks,12 SKS
 semester ini saya mengambil berapa SKS,cek_sks,12 SKS
-tugas kuliah saya apa saja,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
-apa saja tugas yang diberikan,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
-ada tugas kuliah apa,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
-tugas yang harus dikerjakan apa saja,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
-saya punya tugas apa saja,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
-bisa lihat tugas kuliah,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
-tugas saya minggu ini apa,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
-minggu ini ada tugas apa,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
-apa tugas yang harus saya kerjakan minggu ini,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
-tolong cek tugas kuliah saya,cek_tugas,Tugas banyak saya tidak bisa menyebutkan satu persatu
+tugas kuliah,cek_tugas,Cekidot https://docs.google.com/spreadsheets/d/1IVxIbSN580NolyvbRJ3TJtnJE4Yjii4-Wmj50lIrP8c/edit?usp=sharing
+apa saja tugas yang diberikan,cek_tugas,Cekidot https://docs.google.com/spreadsheets/d/1IVxIbSN580NolyvbRJ3TJtnJE4Yjii4-Wmj50lIrP8c/edit?usp=sharing
+ada tugas kuliah apa,cek_tugas,Cekidot https://docs.google.com/spreadsheets/d/1IVxIbSN580NolyvbRJ3TJtnJE4Yjii4-Wmj50lIrP8c/edit?usp=sharing
+tugas yang harus dikerjakan apa saja,cek_tugas,Cekidot https://docs.google.com/spreadsheets/d/1IVxIbSN580NolyvbRJ3TJtnJE4Yjii4-Wmj50lIrP8c/edit?usp=sharing
+saya punya tugas apa saja,cek_tugas,Cekidot https://docs.google.com/spreadsheets/d/1IVxIbSN580NolyvbRJ3TJtnJE4Yjii4-Wmj50lIrP8c/edit?usp=sharing
+bisa lihat tugas kuliah,cek_tugas,Cekidot https://docs.google.com/spreadsheets/d/1IVxIbSN580NolyvbRJ3TJtnJE4Yjii4-Wmj50lIrP8c/edit?usp=sharing
+tugas saya minggu ini apa,cek_tugas,Cekidot https://docs.google.com/spreadsheets/d/1IVxIbSN580NolyvbRJ3TJtnJE4Yjii4-Wmj50lIrP8c/edit?usp=sharing
+minggu ini ada tugas apa,cek_tugas,Cekidot https://docs.google.com/spreadsheets/d/1IVxIbSN580NolyvbRJ3TJtnJE4Yjii4-Wmj50lIrP8c/edit?usp=sharing
+apa tugas yang harus saya kerjakan minggu ini,cek_tugas,Cekidot https://docs.google.com/spreadsheets/d/1IVxIbSN580NolyvbRJ3TJtnJE4Yjii4-Wmj50lIrP8c/edit?usp=sharing
+tolong cek tugas kuliah saya,cek_tugas,Cekidot https://docs.google.com/spreadsheets/d/1IVxIbSN580NolyvbRJ3TJtnJE4Yjii4-Wmj50lIrP8c/edit?usp=sharing
 boleh tidak masuk kuliah berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
 maksimal tidak hadir kuliah berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
 kalau tidak masuk kuliah maksimal berapa kali,cek_aturan,maksimal 5 x lebih dari itu dapat nilai D pasti no debat
@@ -294,6 +295,7 @@ bagaimana syarat presensi elearning,cek_aturan,Mahasiswa dianggap mengikuti perk
 presensi elearning dianggap hadir sampai tahap apa,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
 kapan mahasiswa dianggap mengikuti kuliah daring,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
 aturan presensi elearning bagaimana,cek_aturan,Mahasiswa dianggap mengikuti perkuliahan daring sampai dengan tahap pengisian kuesioner
+jadwal kluliah?,cek_jadwal,Rabu: research methodology (18.20 - 20.00) & data mining (20.00 - 21.40)   Jumat: algoritma design and analysis (18.20 - 20.00) & modelling and optimization (20.00 - 21.40)
 kuliah data mining hari apa,cek_jadwal,Rabu
 data mining dilaksanakan hari apa,cek_jadwal,Rabu
 data mining jadwalnya kapan,cek_jadwal,Rabu
@@ -313,3 +315,9 @@ modelling jadwalnya kapan,cek_jadwal,Jumat
 research methodology kuliah hari apa,cek_jadwal,Rabu
 kapan kuliah research methodology,cek_jadwal,Rabu
 research methodology jadwalnya kapan,cek_jadwal,Rabu
+Bagaimana cara mengetahui NIM mahasiswa?,cara_cek_nim,Silakan masukkan nama lengkap mahasiswa yang ingin dicari NIM-nya.
+Cek NIM mahasiswa,cara_cek_nim,Silakan masukkan nama lengkap mahasiswa yang ingin dicari NIM-nya.
+Bagaimana cara cek NIM?,cara_cek_nim,Silakan masukkan nama lengkap mahasiswa yang ingin dicari NIM-nya.
+Saya ingin mengetahui NIM mahasiswa,cara_cek_nim,Silakan masukkan nama lengkap mahasiswa yang ingin dicari NIM-nya.
+Cara mencari nomor induk mahasiswa,cara_cek_nim,Silakan masukkan nama lengkap mahasiswa yang ingin dicari NIM-nya.
+Bagaimana mencari NIM seseorang,cara_cek_nim,Silakan masukkan nama lengkap mahasiswa yang ingin dicari NIM-nya.

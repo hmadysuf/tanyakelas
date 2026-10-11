@@ -1,8 +1,10 @@
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const input = document.getElementById("message");
     const sendButton = document.getElementById("sendButton");
     const chatbox = document.getElementById("chatbox");
+    const suggestionsContainer = document.getElementById("suggestions");
 
     let isSending = false;
 
@@ -13,152 +15,140 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function sendMessage() {
 
-        // Cegah request dikirim dua kali
-        if (isSending) {
-            return;
-        }
+        if (isSending) return;
 
         const message = input.value.trim();
 
-        if (!message) {
-            return;
-        }
+        if (!message) return;
 
         isSending = true;
 
-        // Tampilkan pesan user
         addMessage(message, "user");
 
-        // Kosongkan input
         input.value = "";
 
-        // Disable tombol
+        // Hilangkan rekomendasi sebelumnya saat pertanyaan dikirim.
+        suggestionsContainer.innerHTML = "";
+
         sendButton.disabled = true;
         sendButton.innerHTML = "⋯";
 
-
-        // =================================================
-        // TAMPILKAN THINKING
-        // =================================================
-
         const thinkingId = showThinking();
-
 
         try {
 
-            // =================================================
-            // REQUEST KE FLASK
-            // =================================================
-
-            const response = await fetch(
-                "/chat",
-                {
-                    method: "POST",
-
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-
-                    body: JSON.stringify({
-                        message: message
-                    })
-                }
-            );
-
+            const response = await fetch("/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    message: message
+                })
+            });
 
             if (!response.ok) {
-
-                throw new Error(
-                    "HTTP Error: " + response.status
-                );
-
+                throw new Error("HTTP Error: " + response.status);
             }
-
 
             const data = await response.json();
 
+            // Simulasi jeda agar chatbot terasa sedang memproses.
+            const delay = Math.floor(Math.random() * 301) + 500;
 
-            // =================================================
-            // DELAY THINKING 500 - 800 ms
-            // =================================================
-
-            const delay =
-                Math.floor(
-                    Math.random() * 301
-                ) + 500;
-
-
-            await new Promise(
-                resolve =>
-                    setTimeout(
-                        resolve,
-                        delay
-                    )
-            );
-
-
-            // =================================================
-            // HAPUS THINKING TERLEBIH DAHULU
-            // =================================================
+            await new Promise(resolve => setTimeout(resolve, delay));
 
             removeThinking(thinkingId);
 
-
-            // =================================================
-            // TAMPILKAN JAWABAN
-            // =================================================
-
             addMessage(
-                data.response,
+                data.response || "Maaf, jawaban belum tersedia.",
                 "bot"
             );
 
-
-            // =================================================
-            // TAMPILKAN INFO MODEL
-            // =================================================
-
             addInfo(
-                data.intent,
-                data.confidence
+                data.intent || "unknown",
+                Number(data.confidence) || 0
             );
 
+            // Tampilkan rekomendasi lanjutan dari Flask.
+            renderSuggestions(data.suggestions || []);
 
         } catch (error) {
 
-            console.error(
-                "Error:",
-                error
-            );
+            console.error("Error:", error);
 
-
-            // Hapus thinking jika terjadi error
-            removeThinking(
-                thinkingId
-            );
-
+            removeThinking(thinkingId);
 
             addMessage(
                 "Terjadi kesalahan saat menghubungi server.",
                 "bot"
             );
 
+            renderSuggestions([
+                {
+                    label: "Coba lagi",
+                    message: message
+                },
+                {
+                    label: "Jadwal UTS",
+                    message: "Kapan jadwal UTS?"
+                }
+            ]);
+
+        } finally {
+
+            sendButton.disabled = false;
+            sendButton.innerHTML = "➤";
+
+            isSending = false;
+
+            input.focus();
+        }
+    }
+
+
+    // =====================================================
+    // RENDER RECOMMENDATIONS
+    // =====================================================
+
+    function renderSuggestions(suggestions) {
+
+        suggestionsContainer.innerHTML = "";
+
+        if (!Array.isArray(suggestions) || suggestions.length === 0) {
+            return;
         }
 
+        suggestions.forEach(function (item) {
 
-        // =================================================
-        // AKTIFKAN KEMBALI INPUT
-        // =================================================
+            const button = document.createElement("button");
 
-        sendButton.disabled = false;
+            button.type = "button";
+            button.className = "suggestion";
+            button.dataset.message = item.message;
+            button.textContent = item.label;
 
-        sendButton.innerHTML = "➤";
+            suggestionsContainer.appendChild(button);
+        });
 
-        isSending = false;
-
-        input.focus();
-
+        scrollChat();
     }
+
+
+    // =====================================================
+    // CLICK RECOMMENDATION
+    // =====================================================
+
+    suggestionsContainer.addEventListener("click", function (event) {
+
+        const button = event.target.closest(".suggestion");
+
+        if (!button || isSending) return;
+
+        input.value = button.dataset.message || "";
+
+        sendMessage();
+    });
 
 
     // =====================================================
@@ -167,96 +157,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showThinking() {
 
-        const id =
-            "thinking-" + Date.now();
+        const id = "thinking-" + Date.now();
 
-
-        const row =
-            document.createElement("div");
-
-
-        row.classList.add(
-            "message-row",
-            "bot-row"
-        );
-
-
+        const row = document.createElement("div");
+        row.classList.add("message-row", "bot-row");
         row.id = id;
 
-
-        const bubble =
-            document.createElement("div");
-
-
+        const bubble = document.createElement("div");
         bubble.classList.add(
             "message",
             "bot-message",
             "thinking-message"
         );
 
+        const content = document.createElement("div");
+        content.classList.add("thinking-content");
 
-        const content =
-            document.createElement("div");
+        const text = document.createElement("span");
+        text.innerText = "Sedang berpikir";
 
-
-        content.classList.add(
-            "thinking-content"
-        );
-
-
-        const text =
-            document.createElement("span");
-
-
-        text.innerText =
-            "Sedang berpikir";
-
-
-        const dots =
-            document.createElement("span");
-
-
-        dots.classList.add(
-            "thinking-dots"
-        );
-
+        const dots = document.createElement("span");
+        dots.classList.add("thinking-dots");
 
         dots.innerHTML =
             "<span>•</span>" +
             "<span>•</span>" +
             "<span>•</span>";
 
-
-        content.appendChild(
-            text
-        );
-
-
-        content.appendChild(
-            dots
-        );
-
-
-        bubble.appendChild(
-            content
-        );
-
-
-        row.appendChild(
-            bubble
-        );
-
-
-        chatbox.appendChild(
-            row
-        );
-
+        content.appendChild(text);
+        content.appendChild(dots);
+        bubble.appendChild(content);
+        row.appendChild(bubble);
+        chatbox.appendChild(row);
 
         scrollChat();
 
-
         return id;
-
     }
 
 
@@ -266,16 +202,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function removeThinking(id) {
 
-        const thinking =
-            document.getElementById(id);
-
+        const thinking = document.getElementById(id);
 
         if (thinking) {
-
             thinking.remove();
-
         }
-
     }
 
 
@@ -283,107 +214,51 @@ document.addEventListener("DOMContentLoaded", function () {
     // ADD MESSAGE
     // =====================================================
 
-    function addMessage(
-        message,
-        sender
-    ) {
+    function addMessage(message, sender) {
 
-        const row =
-            document.createElement("div");
-
+        const row = document.createElement("div");
+        row.classList.add("message-row");
 
         row.classList.add(
-            "message-row"
+            sender === "user" ? "user-row" : "bot-row"
         );
 
-
-        if (sender === "user") {
-
-            row.classList.add(
-                "user-row"
-            );
-
-        } else {
-
-            row.classList.add(
-                "bot-row"
-            );
-
-        }
-
-
-        const bubble =
-            document.createElement("div");
-
+        const bubble = document.createElement("div");
+        bubble.classList.add("message");
 
         bubble.classList.add(
-            "message"
+            sender === "user" ? "user-message" : "bot-message"
         );
 
+        const text = document.createElement("div");
+        text.classList.add("message-text");
+        const taskLinkPrefix = "Daftar tugas kuliah: ";
+        if (sender === "bot" && message.startsWith(taskLinkPrefix)) {
+            const url = message.slice(taskLinkPrefix.length).trim();
+            text.appendChild(document.createTextNode(taskLinkPrefix));
 
-        if (sender === "user") {
-
-            bubble.classList.add(
-                "user-message"
-            );
-
+            const link = document.createElement("a");
+            link.href = url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = url;
+            text.appendChild(link);
         } else {
-
-            bubble.classList.add(
-                "bot-message"
-            );
-
+            text.innerText = message;
         }
 
+        const time = document.createElement("div");
+        time.classList.add("message-time");
+        time.innerText = getCurrentTime();
 
-        const text =
-            document.createElement("div");
+        bubble.appendChild(text);
+        bubble.appendChild(time);
+        row.appendChild(bubble);
 
-
-        text.classList.add(
-            "message-text"
-        );
-
-
-        text.innerText =
-            message;
-
-
-        const time =
-            document.createElement("div");
-
-
-        time.classList.add(
-            "message-time"
-        );
-
-
-        time.innerText =
-            getCurrentTime();
-
-
-        bubble.appendChild(
-            text
-        );
-
-
-        bubble.appendChild(
-            time
-        );
-
-
-        row.appendChild(
-            bubble
-        );
-
-
-        chatbox.appendChild(
-            row
-        );
-
+        // Sisipkan pesan sebelum panel rekomendasi.
+        chatbox.insertBefore(row, suggestionsContainer.parentElement);
 
         scrollChat();
-
     }
 
 
@@ -391,41 +266,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // MODEL INFO
     // =====================================================
 
-    function addInfo(
-        intent,
-        confidence
-    ) {
+    function addInfo(intent, confidence) {
 
-        const info =
-            document.createElement("div");
+        const info = document.createElement("div");
+        info.classList.add("model-info");
 
-
-        info.classList.add(
-            "model-info"
-        );
-
-
-        const percent =
-            (
-                confidence * 100
-            ).toFixed(2);
-
+        const percent = (confidence * 100).toFixed(2);
 
         info.innerText =
-            "Intent: " +
-            intent +
-            " • Confidence: " +
-            percent +
-            "%";
+            "Intent: " + intent +
+            " • Confidence: " + percent + "%";
 
-
-        chatbox.appendChild(
-            info
-        );
-
+        chatbox.insertBefore(info, suggestionsContainer.parentElement);
 
         scrollChat();
-
     }
 
 
@@ -435,18 +289,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function getCurrentTime() {
 
-        const now =
-            new Date();
-
-
-        return now.toLocaleTimeString(
-            "id-ID",
-            {
-                hour: "2-digit",
-                minute: "2-digit"
-            }
-        );
-
+        return new Date().toLocaleTimeString("id-ID", {
+            hour: "2-digit",
+            minute: "2-digit"
+        });
     }
 
 
@@ -455,46 +301,29 @@ document.addEventListener("DOMContentLoaded", function () {
     // =====================================================
 
     function scrollChat() {
-
-        chatbox.scrollTop =
-            chatbox.scrollHeight;
-
+        chatbox.scrollTop = chatbox.scrollHeight;
     }
 
 
     // =====================================================
-    // BUTTON CLICK
+    // SEND BUTTON
     // =====================================================
 
-    sendButton.addEventListener(
-        "click",
-        sendMessage
-    );
+    sendButton.addEventListener("click", sendMessage);
 
 
     // =====================================================
-    // ENTER
+    // ENTER KEY
     // =====================================================
 
-    input.addEventListener(
-        "keydown",
-        function (event) {
+    input.addEventListener("keydown", function (event) {
 
-            if (
-                event.key === "Enter"
-            ) {
-
-                event.preventDefault();
-
-                sendMessage();
-
-            }
-
+        if (event.key === "Enter") {
+            event.preventDefault();
+            sendMessage();
         }
-    );
+    });
 
-
-    // Fokus input
     input.focus();
 
 });
